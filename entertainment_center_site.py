@@ -1,4 +1,6 @@
+#python file to define the movie object contents
 import media
+#python file to render the contents of a movie website 
 import fresh_tomatoes
 
 toy_story = media.Movie("Toy Story ",
@@ -31,6 +33,7 @@ breakingDawn = media.Movie("Breaking Dawn",
                           "https://s-media-cache-ak0.pinimg.com/736x/43/35/dc/4335dc198196478a92558df9d7ad65f1.jpg",
                           "https://www.youtube.com/watch?v=PQNLfo-SOR4")
 
+#a list of movie objects is passed to the fresh_tomatoes.py file to render the movie website by calling the open_movies_page method defined in it 
 movies = [toy_story , avatar ,ratatouille ,homealone ,titanic ,breakingDawn]
 fresh_tomatoes.open_movies_page(movies)
 print(media.Movie.__doc__)
